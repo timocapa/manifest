@@ -61,13 +61,13 @@
   <project path="tools/extract-utils" name="AOSPA/android_tools_extract-utils" remote="aospa" />
 
   <!-- Vendor (AOSPA) -->
-  <project path="vendor/google/gms" name="gotenksIN/android_vendor_google_gms" remote="gitlab" revision="topaz" />
-  <project path="vendor/google/pixel" name="android_vendor_google_pixel" remote="blobs" />
+  <project path="vendor/google/gms" name="gotenksIN/android_vendor_google_gms" remote="gitlab" revision="topaz" clone-depth="1" />
+  <project path="vendor/google/pixel" name="android_vendor_google_pixel" remote="blobs" clone-depth="1" />
   <project path="vendor/aospa" name="AOSPA/android_vendor_aospa" remote="aospa" >
     <linkfile src="build.sh" dest="rom-build.sh" />
   </project>
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="blobs" />
-  <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="blobs" revision="disabled" />
+  <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="blobs" revision="disabled" clone-depth="1" />
 
   <!-- Vendor (QCOM) -->
   <remove-project name="platform/vendor/qcom-opensource/power" />
